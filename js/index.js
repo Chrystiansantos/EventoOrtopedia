@@ -21,5 +21,5 @@
         }
         setInterval(() => {
             dateCalc();
-        }, 1000);
+        }, 10);
     }

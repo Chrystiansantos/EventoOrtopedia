@@ -404,6 +404,12 @@ nav {
     font-size: 10px;
 }
 
+.linkF {
+    text-decoration: none;
+    color: rgb(77, 180, 40);
+    ;
+}
+
 .footer {
     box-sizing: border-box;
     margin-top: -33px;
