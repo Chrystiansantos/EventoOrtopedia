@@ -1,16 +1,19 @@
 body {
-    text-transform: uppercase;
     width: 100%;
+    box-sizing: border-box;
 }
 
-nav {
-    width: 90%;
+.nav {
+    margin: 0 5%;
+    width: 80%;
     overflow: hidden;
-    margin: 0 10%;
+    box-sizing: border-box;
 }
 
 .imagemLink {
     float: left;
+    width: 5%;
+    margin-right: 250px;
 }
 
 .imagemLink a img {
@@ -18,428 +21,138 @@ nav {
 }
 
 .links {
-    float: left;
-    margin-left: 40px;
+    display: flex;
+    width: 68%;
+    padding-top: 25px;
 }
 
 .links li {
-    margin-top: 20px;
     list-style: none;
     display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px 5px;
+    margin: 0 10px;
 }
 
 .links li a {
+    margin-top: 120px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
     color: black;
-}
-
-.links li:nth-child(6) {
-    background-color: green;
-    padding: 3px 10px;
 }
 
 .links li a:hover {
     color: green;
-    transition-property: color;
-    transition-duration: 2s;
+    transition: color 2s;
+}
+
+.links li a:nth-child(5) {
+    background-color: red;
+    font-size: 20px;
 }
 
 .imgTopo {
-    background-image: url("../img/background1.jpg");
-    background-position: center;
-    background-position: top;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-bottom: 50px;
-    height: 100%;
+    background-image: url('../img/background1.jpg');
+    background-size: cover;
+    height: 500px;
 }
 
 .textoTopo {
-    padding-top: 20px;
-    margin-left: 140px;
+    padding-top: 40px;
+    margin-left: 15%;
+    color: rgb(177, 171, 171);
+    text-transform: uppercase;
+}
+
+.textoTopo h1 {
+    line-height: 0.5;
+    font-size: 30px;
 }
 
 .textoTopo h1 span {
-    color: green;
-}
-
-.textoTopo {
-    padding-top: 60px;
-    color: white;
-    line-height: 15px;
+    color: rgb(9, 145, 9);
 }
 
 .fas {
-    color: green;
-    display: inline-block;
-}
-
-.textoTopoH2 {
-    margin-top: 60px;
-}
-
-.textoTopoH2 span {
-    white-space: pre;
-    margin-left: 12px;
-}
-
-.textoTopoH2 h2 {
-    font-size: 15px;
-    line-height: 20px;
-    width: 300px;
-    font-weight: 500;
-}
-
-.textoTopoH2 a {
-    display: inline-block;
-    margin-top: 40px;
-    background-color: green;
-    border-radius: 20px;
-    color: black;
-    padding: 10px 15px;
-    font-size: 15px;
-    text-decoration: none;
-}
-
-.segundoBackground {
-    margin-top: -10px;
-    background-image: url('../img/background2.jpg');
-    background-position: center;
-    width: 100%;
-    overflow: hidden;
-    height: 300px;
-}
-
-.textoInovacaoExperiencia {
-    float: left;
-    color: white;
-    width: 35%;
-    margin-left: 15%;
-    margin-top: 40px;
-}
-
-.textoInovacaoExperiencia p {
-    color: rgba(255, 255, 255, .5);
-    letter-spacing: 1px;
-}
-
-.textoInovacaoExperiencia p {
-    font-weight: 100;
-    font-size: 12px;
-    text-transform: none;
-}
-
-.textoInovacaoExperiencia h3 {
-    font-weight: 100;
-}
-
-.tempoRestante {
-    float: left;
-    width: 35%;
-}
-
-.quadro {
-    text-transform: none;
-    margin: 20% 2%;
-    width: 15%;
-    height: 80px;
-    display: block;
-    float: left;
-    background-color: white;
-    text-align: center;
-    border-radius: 5px 5px 5px 5px;
-    box-sizing: border-box;
-}
-
-.quadro p {
-    background-color: green;
-    padding: 4px;
-    color: rgb(159, 197, 159);
-    font-size: 10px;
-    margin-bottom: 0;
-    border-radius: 0px 0px 5px 5px;
-    box-sizing: border-box;
-}
-
-.secao3 {
-    width: 100%;
-    overflow: hidden
-}
-
-.secao3img {
-    width: 50%;
-    float: left;
-}
-
-.imgPresitente {
-    width: 500px;
-    margin-left: 100px;
-}
-
-.palavrasPresidente {
-    float: left;
-    width: 50%;
-    line-height: 1;
-}
-
-.palavrasPresidente h2 {
+    color: rgb(9, 145, 9);
     font-size: 25px;
 }
 
-.palavrasPresidente h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
+.textoTopoH2 {
+    margin-top: 80px;
+    font-size: 10px;
+    font-weight: 100;
+    width: 30%;
+    line-height: 15px;
 }
 
-.palavrasPresidente p {
-    text-transform: none;
-    color: rgba(0, 0, 0, .5);
-}
-
-.palavrasPresidente img {
-    margin-top: 40px;
-    margin-bottom: 5px;
-}
-
-.informaçoesPresidente {
-    line-height: 0.2;
-    margin-bottom: 50px;
-    margin-left: 0;
-    text-align: left;
-}
-
-.palavrasPresidente button {
-    background-color: rgb(75, 185, 75);
-    color: rgb(4, 39, 4);
-    border-radius: 20px;
-    padding: 5px 30px;
-    text-transform: uppercase;
+.textoTopoH2 a {
+    margin-top: 10%;
+    background-color: rgb(12, 206, 12);
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    color: rgb(25, 105, 25);
     font-size: 10px;
 }
 
-.palavrasPresidente button:focus {
-    outline: none;
-}
-
-.painelPalestrantes {
-    background-image: url('../img/background3.jpg');
-    background-repeat: no-repeat;
-    margin-top: -33px;
+.segundoBackground {
+    background-image: url('../img/background2.jpg');
+    width: 100%;
+    display: flex;
     box-sizing: border-box;
 }
 
-.painelPalestrantes h3 {
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    font-weight: 700;
-    padding-top: 50px;
+.textoInovacaoExperiencia {
+    width: 50%;
+    color: rgb(177, 171, 171);
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 10%;
+    padding-bottom: 5%;
 }
 
-.painelPalestrantes p {
-    text-align: center;
-    color: rgba(128, 216, 128, 0.5);
-    text-transform: none;
-}
-
-.palestrantes {
-    width: 100%;
-    height: 650px;
-    overflow: hidden;
-}
-
-.cardPalestrante {
-    text-align: center;
-    float: left;
-    width: 15%;
-    margin: 2% 4.5%;
-}
-
-.cardPalestrante h3,
-.cardPalestrante h4 {
-    display: none;
-}
-
-.cardPalestrante:hover {}
-
-.parceiros {
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-.parceiros h3 {
-    color: green;
-}
-
-.parceiros h3:nth-child(3),
-.parceiros h3:nth-child(5),
-.parceiros h3:nth-child(8) {
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.parceiros p {
-    color: rgb(148, 144, 144);
-    text-transform: none;
-}
-
-.maps {
-    text-align: center;
-    text-transform: none;
-    overflow: hidden;
-}
-
-.maps iframe {
-    margin-bottom: 50px;
-}
-
-.maps h3 {
-    color: green;
+.textoInovacaoExperiencia h2,
+.textoInovacaoExperiencia h3 {
+    color: rgb(207, 203, 203);
     text-transform: uppercase;
-    font-size: 30px;
-    margin-bottom: 45px;
+    font-weight: bold;
 }
 
-.maps {
-    color: rgb(124, 124, 124);
-}
-
-.maps p {
-    margin-top: -20px;
-}
-
-
-/*Formataçao inputs*/
-
-.inputs {
-    float: left;
+.tempoRestante {
     width: 50%;
 }
 
-.inputs label {
+.tempoRestante {
+    display: flex;
+}
+
+.tempoRestante div {
     display: block;
-    text-align: left;
-    margin-left: 18%;
-    margin-bottom: 5px;
-}
-
-.inputs input {
-    width: 400px;
-    height: 30px;
-}
-
-.radio {
-    margin-top: 100px;
-    text-align: center;
-}
-
-.radio input {
-    margin-left: 50px;
-}
-
-.radio input:nth-child(1) {
-    margin-left: 0;
-}
-
-.radio button {
-    text-align: center;
-    display: block;
-    margin: 40px auto 0;
-    padding: 5px 100px;
-    background-color: green;
-    border-radius: 15px;
-    color: rgb(9, 43, 9);
-    font-size: 15px;
-}
-
-.radio button:focus {
-    outline: none;
-}
-
-.newsLetter {
-    background-image: url('../img/background4.jpg');
-    width: 100%;
-    height: 200px;
-}
-
-.newsLetter h2 {
-    padding-top: 25px;
-    text-align: center;
-    color: white;
-    letter-spacing: 2px;
-    font-weight: 800;
-}
-
-.newsLetter h3 {
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.form {
-    text-align: center;
-}
-
-.form input {
+    background-color: white;
+    height: 29%;
     border-radius: 5px;
-    width: 350px;
-    height: 25px;
-}
-
-.form input:focus {
-    border: 3px solid green;
-}
-
-.form button {
-    background-color: rgb(40, 180, 40);
-    padding: 9px 18px;
-    border-radius: 5px;
-    font-size: 10px;
-}
-
-.linkF {
-    text-decoration: none;
-    color: rgb(77, 180, 40);
-    ;
-}
-
-.footer {
+    text-align: center;
+    width: 17%;
+    margin-right: 4%;
+    margin-top: 24%;
+    padding-bottom: 0;
     box-sizing: border-box;
-    margin-top: -33px;
-    background-image: url('../img/background5.jpg');
+}
+
+.quadro h4 {
+    color: green;
+    font-size: 25px;
     text-align: center;
-    height: 150px;
+    font-weight: bold;
+    margin-top: 25px;
 }
 
-.footer h5 {
-    padding-top: 35px;
-    font-size: 20px;
-    color: rgb(40, 180, 40);
-    font-weight: 900;
-}
-
-.footer h6 {
-    margin-top: -20px;
-    font-weight: 300;
-    color: rgb(77, 168, 77);
-}
-
-.footer p {
-    margin: 0 5px;
-    display: inline-block;
-    color: rgb(77, 180, 40);
-}
-
-.rodapeFinal {
-    text-align: center;
-    font-size: 10px;
-    text-transform: none;
-    color: rgb(82, 77, 77);
+.quadro p {
+    margin-top: -10px;
+    background-color: green;
+    font-size: 15px;
+    color: white;
+    padding: 4px;
+    border-radius: 0px 0px 5px 5px;
 }
