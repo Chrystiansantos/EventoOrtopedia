@@ -107,7 +107,7 @@ body {
     width: 50%;
     color: rgb(177, 171, 171);
     margin-top: 2%;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-right: 10%;
     padding-bottom: 5%;
 }
@@ -135,7 +135,7 @@ body {
     text-align: center;
     width: 17%;
     margin-right: 4%;
-    margin-top: 24%;
+    margin-top: 15%;
     padding-bottom: 0;
     box-sizing: border-box;
 }
@@ -155,4 +155,110 @@ body {
     color: white;
     padding: 4px;
     border-radius: 0px 0px 5px 5px;
+}
+
+.secao3 {
+    display: flex;
+}
+
+.secao3img {
+    width: 50%;
+}
+
+.secao3img img {
+    width: 500px;
+    margin-left: 15%;
+}
+
+.palavrasPresidente {
+    width: 50%;
+}
+
+.palavrasPresidente h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.palavrasPresidente h3 {
+    margin-top: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.palavrasPresidente p {
+    color: rgb(177, 171, 171);
+}
+
+.informaçoesPresidente {
+    line-height: 3px
+}
+
+.secao3 button {
+    margin-top: 4%;
+    background-color: rgb(9, 145, 9);
+    padding: 5px 35px;
+    border-radius: 30px;
+    color: rgb(6, 31, 6);
+}
+
+.secao3 button:focus {
+    outline: none;
+}
+
+.painelPalestrantes {
+    display: inline-block;
+    width: 100%;
+    background-image: url('../img/background3.jpg');
+}
+
+.painelPalestrantes h3 {
+    text-align: center;
+    color: #FFF;
+    padding-top: 30px;
+    font-weight: 500;
+}
+
+.painelPalestrantes p {
+    text-align: center;
+    color: rgb(177, 171, 171);
+}
+
+.palestrantes {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 15%;
+    padding-bottom: 5%;
+}
+
+.cardPalestrante {
+    width: 20%;
+    margin-top: 7%;
+}
+
+.cardPalestrante h3,
+.cardPalestrante h4 {
+    display: none;
+}
+
+.parceiros {
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.parceiros h3 {
+    color: green;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.parceiros p {
+    color: rgb(177, 171, 171);
+}
+
+.parceiros :nth-child(3),
+.parceiros :nth-child(5),
+.parceiros :nth-child(8) {
+    font-size: 15px;
 }
